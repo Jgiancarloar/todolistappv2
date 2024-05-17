@@ -35,7 +35,7 @@ export const TaskProvider = (props) => {
 
     const saveEdit = (e) => {
         e.preventDefault();
-        const newTasks = tasks.map(t => t.id === id ? {...t, id, task } : item)
+        const newTasks = tasks.map(t => t.id === id ? {...t, id, task } : t)
         setTasks(newTasks)
         setTask("")
         setEdit(false)
